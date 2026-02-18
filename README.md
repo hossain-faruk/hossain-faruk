@@ -36,13 +36,15 @@ I am a passionate **Frontend & MERN Stack Developer** dedicated to building fast
 
 ---
 
-📊 GitHub Analytics
+## 📊 GitHub Analytics
 
 <p align="center">
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=hossain-faruk&theme=radical" width="100%" />
 </p>
 
-🐍 Contribution Snake
+---
+
+## 🐍 Contribution Snake
 
 <p align="center">
 <picture>
@@ -52,7 +54,9 @@ I am a passionate **Frontend & MERN Stack Developer** dedicated to building fast
 </picture>
 </p>
 
-🌐 Connect with Me
+---
+
+## 🌐 Connect with Me
 
 <p align="left">
 <a href="https://linkedin.com/in/YOUR_LINKEDIN_ID" target="_blank">
@@ -67,5 +71,6 @@ I am a passionate **Frontend & MERN Stack Developer** dedicated to building fast
 </p>
 
 <p align="center">
+<br />
 <i>"Let's Build Something Awesome Together!"</i>
 </p>

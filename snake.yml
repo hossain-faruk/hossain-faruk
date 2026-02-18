@@ -2,25 +2,26 @@ name: Generate Snake
 
 on:
   schedule:
-    - cron: "0 */12 * * *"
-
-  workflow_dispatch:
-
+    - cron: "0 */12 * * *" # প্রতি ১২ ঘণ্টা পর পর অটো চলবে
+  workflow_dispatch: # আপনি যখন খুশি ম্যানুয়ালি রান করতে পারবেন
   push:
     branches:
-      - main
+      - main # মেইন ব্রাঞ্চে কোনো পুশ হলে চলবে
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 5 # কোনো কারণে আটকে গেলে ৫ মিনিট পর বন্ধ হবে
 
     permissions:
-      contents: write
+      contents: write # ফাইলে লেখার পারমিশন নিশ্চিত করা হলো
 
     steps:
+      # ১. রিপোজিটরি চেকআউট করা
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
+      # ২. কন্ট্রিবিউশন গ্রাফ থেকে স্নেক জেনারেট করা
       - name: Generate contribution snake
         uses: Platane/snk@v3
         with:
@@ -29,10 +30,12 @@ jobs:
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
+      # ৩. জেনারেট করা ফাইলগুলো 'output' ব্রাঞ্চে পুশ করা
       - name: Push generated snake to output branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
+        uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
           build_dir: dist
+          commit_message: "Update github-contribution-snake"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
