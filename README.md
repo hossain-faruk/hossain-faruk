@@ -14,10 +14,13 @@
 
 I am a passionate **Frontend & MERN Stack Developer** dedicated to building fast, scalable, and modern web applications. I enjoy the process of turning complex ideas into functional products with a strong focus on clean code and exceptional user experience.
 
-- 📚 **Core Expertise:** React.js, Next.js, Node.js, and MongoDB.
-- 💻 **Proficient in:** JavaScript (ES6+), Java, C, C++, and Python.
+- 🖥️ I’m currently working on React.js, Next.js, Typescript and Redux for frontend development.
+- 🗄️ Using Node.js, Express.js, MongoDB, Mongoose, PostgreSQL, and Prisma for the backend.
+- 🛠️ I’m currently learning React Native, GraphQL, Docker and AWS Architectures & Cloud Technologies..
+- 💬 Ask me about Full-Stack (React, Next, Node, Express, MongoDB, PostgreSQL).
+- 📝 I regularly write articles on LinkedIn
+- 📫 Feel free to reach me out Email
 - 💼 **Focus:** Building responsive UI/UX and solving real-world technical problems.
-- 🌱 **Currently Learning:** Advanced Full-Stack Architectures & Cloud Technologies.
 
 ---
 
